@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+<body>
+    <script>
+        var library = {
+    map: function() {
+        var map = map([1, 2, 3], function(num){ return num * 3; });
+   },
+    reduce: function() { 
+        var reduce = reduce([1, 2, 3], function(memo, num){ return memo + num; });
+   },
+    find: function() {   
+        var find = find([1, 2, 3], function(num){ return num % 2 == 0; });
+   },
+    filter: function() { 
+        var filter = filter([1, 2, 3], function(num){ return num % 2 == 0; });
+   },
+    reject: function() { 
+        var reject = reject([1, 2, 3], function(num){ return num % 2 == 0; });
+   }
+ }
+    </script>
+</body>
+</html>
